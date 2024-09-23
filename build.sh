@@ -31,7 +31,7 @@ XC_DESTINATION_MACOS='generic/platform=macOS'
 XC_SDK_IOS='iphoneos'
 XC_SDK_IOS_SIMULATOR='iphonesimulator'
 
-XC_DESTINATION_IOS='name=Any iOS Device'
+XC_DESTINATION_IOS='generic/platform=iOS'
 XC_DESTINATION_IOS_SIMULATOR='generic/platform=iOS Simulator'
 
 XC_SCHEME='swift-package-ios-build-test'
@@ -83,5 +83,5 @@ build () {
 config="${XC_CONFIG_RELEASE}"
 
 build "${BIN_PATH_RELEASE}/${XC_SDK_IOS}" "${config}" "${XC_SDK_IOS}" "${XC_DESTINATION_IOS}"
-build "${BIN_PATH_RELEASE}/${XC_SDK_IOS_SIMULATOR}" "${config}" "${XC_SDK_IOS_SIMULATOR}" "${XC_DESTINATION_IOS_SIMULATOR}"
-build "${BIN_PATH_RELEASE}/${XC_SDK_MACOS}" "${config}" "${XC_SDK_MACOS}" "${XC_DESTINATION_MACOS}"
+# build "${BIN_PATH_RELEASE}/${XC_SDK_IOS_SIMULATOR}" "${config}" "${XC_SDK_IOS_SIMULATOR}" "${XC_DESTINATION_IOS_SIMULATOR}"
+# build "${BIN_PATH_RELEASE}/${XC_SDK_MACOS}" "${config}" "${XC_SDK_MACOS}" "${XC_DESTINATION_MACOS}"
